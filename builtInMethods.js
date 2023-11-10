@@ -7,16 +7,21 @@
 // No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
 // The return value is "hello world"
 "Hello World".toLowerCase();
-
-
+// The .toLowerCase is being called on the string "Hello World". The purpose of the method is to change all letters in the String to lowercase.
+// The return value will be "hello world"
+.
 "Hello World".includes("Hello");
-
+// The .includes method is being called on the string "Hello World". The purpose of this method is to check if the string contains the provided characters.
+// No arguments are passed - since the string does include "Hello", the return value will be the Boolean "true"
 
 "Hello World".endsWith("Hello");
+// The .endsWith method is being called on the string "Hello World". The purpose of the method is to check if a String ends with the same provided string of characters.
+// There are no arguments passed - since the string does not end with "Hello", the return value will be the Booleon "false".
 
 
 "Hello World".endsWith("rld");
-
+// The .endsWith method is being called on the string "Hello World". The purpose of the method is to check if a String ends with the same provided string of characters.
+// There are no arguments passed - since the string ends with "rld", the return value will be the Booleon "true".
 
 
 // SECTION 2: Calling methods on variables assigned to strings.
