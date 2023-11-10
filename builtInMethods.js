@@ -58,3 +58,22 @@ console.log(sentence.replaceAll('snow', 'lava'));
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+
+// The .forEach method is called on the variable nums that stores an array of numbers.
+// The .forEach method returns a separate line of return value for each element in the array.
+// In this example, the return value will be
+// 1
+// 2
+// 3
+// 4
+// because argument "element" indicates to include every element in the array stored in the nums variable.
+// The console.log() statment prints the return value that is a print of each element to the console.
+var nums = [1, 2, 3, 4];
+nums.forEach((element) => console.log(element));
+
+// The .join method is called on the variable holidays that stores an array of Strings.
+// The .join method return value is a combination of every element of the array in order with whatever punctiation is added or removed. The punctuation or lack of spacing will depend on what is passed as an argument (e.g. ('-') will have the output include a hyphen between each element).
+// In this example, the return value will be "Halloween,Thanksgiving,Christmas" because there was no argument passed and those are the elements assigned to the variable .join was called on.
+// The console.log() statement prints the return value as a String to the console.
+var holidays = ['Halloween', 'Thanksgiving', 'Christmas'];
+console.log(holidays.join());
