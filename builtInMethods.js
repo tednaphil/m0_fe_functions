@@ -38,6 +38,19 @@
 var firstName = "Jeff";
 console.log(firstName.startsWith("J"));
 
+// The .repeat() method is called on the cheer variable, which stores the string "geaux!".
+// The .repeat() method returns the object assigned to the variable however many times is defined by the number provided as an argument.
+// In this example, the return value is "geaux!geaux!geaux!geaux!" because the argument passed was 4.
+// The console.log() statement prints the return value of the .repeat() method to the console.
+var cheer = "geaux!";
+console.log(cheer.repeat(4));
+
+// The .replaceAll method is called on the sentence variable that stores the string "I love the way the snow falls in my snow globe."
+// The .replaceAll method returns a new string with the pattern passed as an argument with the replacement passed as an argument.
+// In this example, the return value is "I love the way the lava falls in my lava globe." because the arguments passed were ('snow', 'lava').
+// The console.log() statement prints the return value of the .replaceAll method (a new string) to the console.
+var sentence = "I love the way the snow falls in my snow globe";
+console.log(sentence.replaceAll('snow', 'lava')); 
 
 
 // SECTION 3: Calling methods on variables assigned to arrays.
