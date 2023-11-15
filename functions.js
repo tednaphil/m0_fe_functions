@@ -14,42 +14,44 @@ console.log(greeting());
 
 // 2: Write a function named customGreeting that returns a greeting WITH a specific name.
 function customGreeting(name){
-    console.log (`What's shaking, ${name}!`);
+    return (`What's shaking, ${name}!`);
 }
 
-var greeting1 = customGreeting("Bellamy");
-var greeting2 = customGreeting("Taylor");
+var greetBellamy = customGreeting("Bellamy");
+var greetTaylor = customGreeting("Taylor");
+
+console.log(greetBellamy);
 
 
 // 3: Write a function named greetPerson that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 function greetPerson(first, middle, last){
-    console.log (`Good to see you, ${first} ${middle} ${last}. How was your day?`);
+    return (`Good to see you, ${first} ${middle} ${last}. How was your day?`);
 }
 var greeting1 = greetPerson("Saint", "Nicholas", "Kringle");
 var greeting2 = greetPerson("Tony", "Toni", "Tone");
 
-
+console.log(greeting1);
 
 // 4: Write a function named square that takes in one number, and returns the square of that number.
 // BONUS: Print a sentence that interpolates the return value of your square function.
 function square(num){
     var numSquared = num * num;
-    console.log(numSquared);
-    console.log(`The square of ${num} is ${numSquared}!`);
+    return (`The square of ${num} is ${numSquared}!`);
 }
+
+console.log(square(4));
 
 // I ran `square(2)' to test the function. The console printed "4" and "The square of 2 is 4!"
 
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 function checkStock(num, item){
-    var inventory = num;
-    if (inventory >= 4) {
-        console.log (`${item} is stocked`);
-    }  else if (inventory === 0) {
-        console.log (`${item} - OUT of stock!`);
-    } else if (inventory <= 3) {
-        console.log (`${item} - running LOW`);
+    if (num >= 4) {
+        return (`${item} is stocked`);
+    }  else if (num === 0) {
+        return (`${item} - OUT of stock!`);
+    } else if (num <= 3) {
+        return (`${item} - running LOW`);
     }}
 
 
@@ -64,3 +66,5 @@ checkStock(0, "Cheese");
 
 checkStock(1, "Salsa");
 // => "Salsa - running LOW"
+
+console.log(checkStock(4, "Coffee"));
