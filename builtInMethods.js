@@ -9,7 +9,7 @@
 "Hello World".toLowerCase();
 // The .toLowerCase is being called on the string "Hello World". The purpose of the method is to change all letters in the String to lowercase.
 // The return value will be "hello world"
-.
+
 "Hello World".includes("Hello");
 // The .includes method is being called on the string "Hello World". The purpose of this method is to check if the string contains the provided characters.
 // The argument "Hello" is passed - since the string does include "Hello", the return value will be the Boolean "true"
